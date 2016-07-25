@@ -13,10 +13,12 @@ section {
     min-height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
+    -webkit-flex-direction: row;
     flex-direction: row;
 
 }
@@ -100,15 +102,14 @@ section:after {
     content: "";
     display: block;
 }
-footer {
+.footer {
     width: 100%;
     background-color: #e67817;
-/*    position: fixed;*/
-/*    bottom: 0;*/
     text-align: center;
     height: 3.875em;
+    display: table;
 }
-footer p {
+.footer > div {
     vertical-align: middle;
-/*    margin: 1em 0;*/
+    display: table-cell;
 }

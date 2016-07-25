@@ -1,0 +1,101 @@
+body {
+    margin: 0 auto;
+	font: 1em 'Rubik', 'Arial', sans-serif;
+    text-transform: uppercase;
+    background-color: #0a0b0d;
+    color: #fff;
+}
+section {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+}
+section > button {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 3em;
+    height: 2.0625em;
+}
+aside {
+    background-color: #000;
+    width: 23.0625em;
+    padding: 2.8125em;
+    box-sizing: border-box;
+}
+/*
+aside > form {
+    margin: 0 auto;
+}
+*/
+fieldset {
+    width: 100%;
+    box-sizing: border-box;
+}
+.right-aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+section div {
+    padding-top: 45px;
+    width: 100%;
+}
+input,
+select {
+    height: 4.125em;
+    width: 100%;
+    background-color: #221203;
+    border: 0;
+    border-bottom: 0.0625em solid #e67817;
+    color: inherit;
+    font-family: inherit;
+    text-transform: inherit;
+    box-sizing: border-box;
+}
+input:focus,
+select:focus {
+    outline: none;
+}
+input[placeholder] {
+    font-family: inherit;
+    text-transform: inherit;
+}
+input[type="submit"] {
+    background-color: #e67817;
+}
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+}
+table {
+    margin: 0 auto;
+    width: 95%;
+    border-collapse: collapse;
+}
+thead {
+    color: #e67817;
+    border-bottom: 0.125em solid #737374;
+}
+tbody tr:hover {
+    background-color: #353E44;
+    -webkit-transition: all  0.3s;
+}
+
+footer {
+    width: 100%;
+    background-color: #e67817;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+footer p {
+    vertical-align: middle;
+    margin: 1em 0;
+}

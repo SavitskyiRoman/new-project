@@ -1033,7 +1033,7 @@
             }
 
             this.el.style.left = left + 'px';
-            this.el.style.top = top + 'px';
+            this.el.style.top = top + -1 + 'px';
         },
 
         /**

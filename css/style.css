@@ -21,6 +21,7 @@ section {
     -webkit-flex-direction: row;
     flex-direction: row;
     position: relative;
+    margin-bottom: -3.875em;
 }
 section > button {
     position: absolute;
@@ -34,6 +35,7 @@ aside {
     width: 23.0625em;
     padding: 8em 2.8125em;
     box-sizing: border-box;
+/*    margin-bottom: 3.875em;*/
 }
 fieldset {
     width: 100%;
@@ -44,9 +46,10 @@ fieldset {
     position: absolute;
     top: 0;
     right: 0;
+/*    margin-bottom: -3.875em;*/
 }
 section div {
-    padding: 2.8125em 0;
+    padding: 2.8125em 0 5em 0;
     width: 51.9375em;
 }
 input,
@@ -98,16 +101,13 @@ tbody tr:hover {
     vertical-align: middle;
     text-align: center;
 }
-section:after {
-    content: "";
-    display: block;
-}
 .footer {
     width: 100%;
     background-color: #e67817;
     text-align: center;
     height: 3.875em;
     display: table;
+    position: absolute;
 }
 .footer > div {
     vertical-align: middle;

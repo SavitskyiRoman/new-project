@@ -199,20 +199,29 @@
                 <input type="text" id="dueDate" name="dueDate" placeholder="Due Date:" required><br>
                 <input type="text" id="createDate" name="createDate" placeholder="Created:" required><br>
                 <input type="text" id="members" name="members" placeholder="Members:" required><br>
-                <select id="type" name="type" required>
-                    <option disabled selected value>Type:</option>
-                    <option value="web">Web</option>
-                    <option value="desctop">Desctop</option>
-                    <option value="mobile">Mobile</option>
-                    <option value="support">Support</option>
-                </select><br>
-                <select id="customer" name="customer" required>
-                    <option disabled selected value>Customer:</option>
-                    <option value="john">John</option>
-                    <option value="david">David</option>
-                    <option value="bill">Bill</option>
-                    <option value="alehandro">Alehandro Rohas</option>
-                </select><br>
+                <div onclick="type();" class="type-menu">
+                    <input type="text" placeholder="Type:" required class="type-label" name="type">
+                </div>
+                <div id="type" class="hidden" onclick='choose (event, this);'>
+                    <ul>
+                        <li>Web</li>
+                        <li>Desctop</li>
+                        <li>Mobile</li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+                <div onclick="customer();" class="customer-menu">
+                    <input type="text" placeholder="Customer:" required class="type-label" name="customer">
+                </div>
+                <div id="customer" class="hidden" onclick='choose (event, this);'>
+                    <ul>
+                        <li>John</li>
+                        <li>David</li>
+                        <li>Bill</li>
+                        <li>Alehandro Rohas</li>
+                    </ul>
+                </div>
+                <br>
                 <input type="submit" value="Create">
             </form>
         </aside>

@@ -13,12 +13,10 @@ section {
     min-height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    -webkit-flex-direction: row;
     flex-direction: row;
     position: relative;
     margin-bottom: -3.875em;
@@ -61,9 +59,11 @@ select {
     border-bottom: 0.0625em solid #e67817;
     color: inherit;
     font-family: inherit;
+    font-size: 0.83333125em;
     text-transform: inherit;
     box-sizing: border-box;
     margin: 1em 0;
+    padding: 0;
 }
 input:focus,
 select:focus {
@@ -71,6 +71,30 @@ select:focus {
 }
 input[placeholder] {
     padding-left: 5px;
+}
+::-webkit-input-placeholder {
+/*    padding-left: 5px;*/
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+::-moz-placeholder {
+/*    padding-left: 5px;*/
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+:-ms-input-placeholder {
+/*    padding-left: 5px;*/
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+::placeholder {
+/*    padding-left: 5px;*/
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
 }
 input[type="submit"] {
     background-color: #e67817;
@@ -112,4 +136,34 @@ tbody tr:hover {
 .footer > div {
     vertical-align: middle;
     display: table-cell;
+}
+.type-menu,
+.customer-menu {
+    width: 100%;
+    padding: 0;
+}
+ul {
+	width: 100%;
+    color: #fff;
+    list-style-type: none;
+	font-size: 0.83333125em;
+	line-height: 4.125em;
+	background-color: #221203;
+	cursor: default;
+    text-align: center;
+    border-bottom: 0.0625em solid #e67817;
+    border-top: 0.0625em solid #fff;
+}
+li:hover {
+     background: #353E44;
+}
+.hidden{
+    display: none;
+    padding: 0;
+}
+.visible{
+	visibility: visible;
+    padding: 0;
+    margin-top: -1em;
+    width: 100%;
 }

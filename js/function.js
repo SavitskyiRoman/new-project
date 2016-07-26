@@ -3,22 +3,7 @@ var searchDate = new Pikaday(
         field: document.getElementById('searchDate'),
         format: 'DD-MM-YYYY'
     });
-/*var dueDate = new Pikaday(
-    {
-        field: document.getElementById('dueDate'),
-        format: 'DD-MM-YYYY',
-        minDate: new Date()
-    });
-var createDate = new Pikaday(
-    {
-        field: document.getElementById('createDate'),
-        format: 'DD-MM-YYYY',
-        minDate: new Date()
-    });*/
-
-
-
-    var startDate,
+var startDate,
         endDate,
         updateStartDate = function() {
             createDate.setStartRange(startDate);
@@ -59,4 +44,28 @@ var createDate = new Pikaday(
         if (_endDate) {
             endDate = _endDate;
             updateEndDate();
-        }
+        };
+
+function type() {
+				var selectbox = document.getElementById("type");
+				if (selectbox.className == "hidden") {
+					selectbox.setAttribute("class","visible");
+				} else {
+					selectbox.setAttribute("class","hidden");
+				}
+			}
+function customer() {
+				var selectbox = document.getElementById("customer");
+				if (selectbox.className == "hidden") {
+					selectbox.setAttribute("class","visible");
+				} else {
+					selectbox.setAttribute("class","hidden");
+				}
+			}
+function choose(ev, el) {
+    var options = el, target = ev.target,
+    value = ev.target.innerHTML;
+
+    options.setAttribute('class', 'hidden');
+    options.parentElement.querySelector('.type-label').value = value;
+}

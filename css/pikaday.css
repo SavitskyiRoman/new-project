@@ -188,21 +188,17 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 }
 
 .is-inrange .pika-button {
-    background: #D5E9F7;
+    background: rgba(255,255,0, 0.7);
 }
 
 .is-startrange .pika-button {
-    color: #fff;
+    color: inherit;
     background: #6CB31D;
-    box-shadow: none;
-    border-radius: 3px;
 }
 
 .is-endrange .pika-button {
-    color: #fff;
-    background: #33aaff;
-    box-shadow: none;
-    border-radius: 3px;
+    color: inherit;
+    background: #ff0000;
 }
 
 .is-disabled .pika-button,

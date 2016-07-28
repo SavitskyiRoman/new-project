@@ -8,7 +8,6 @@
 "type": "support",
 "status": "ok",
 "customer": "David"
-
 },
 {
 "id": 2,
@@ -19,5 +18,15 @@
 "type": "web",
 "status": "in progres",
 "customer": "Bill"
+},
+{
+"id": 3,
+"projectName": "Create party",
+"dueDate": "31-07-2016",
+"createDate": "28-07-2016",
+"members": 15,
+"type": "Support",
+"status": "in progres",
+"customer": "Alehandro Rohas"
 }
 ]

@@ -991,7 +991,7 @@
 
             if (this._o.container) return;
 
-            this.el.style.position = 'absolute';
+            this.el.style.position = 'fixed';
 
             field = this._o.trigger;
             pEl = field;

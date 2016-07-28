@@ -1,0 +1,23 @@
+[
+{
+"id": 1,
+"projectName": "Name",
+"dueDate": "29-07-2016",
+"createDate": "21-07-2016",
+"members": 3,
+"type": "support",
+"status": "ok",
+"customer": "David"
+
+},
+{
+"id": 2,
+"projectName": "new Name",
+"dueDate": "30-07-2016",
+"createDate": "19-06-2016",
+"members": 5,
+"type": "web",
+"status": "in progres",
+"customer": "Bill"
+}
+]

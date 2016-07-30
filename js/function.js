@@ -26,6 +26,7 @@ var startDate,
         field: document.getElementById('createDate'),
         minDate: new Date(),
         maxDate: new Date(2020, 12, 31),
+        format: 'DD-MM-YYYY',
         onSelect: function() {
             startDate = this.getDate();
             updateStartDate();
@@ -35,6 +36,7 @@ var startDate,
         field: document.getElementById('dueDate'),
         minDate: new Date(),
         maxDate: new Date(2020, 12, 31),
+        format: 'DD-MM-YYYY',
         onSelect: function() {
             endDate = this.getDate();
             updateEndDate();
@@ -58,7 +60,7 @@ function openSelectMenu(ev) {
             if (selectbox.className == "customer-hidden") {
 				selectbox.setAttribute("class","visible");
             } else {
-				selectbox.setAttribute("class","hidden");
+				selectbox.setAttribute("class","customer-hidden");
 			};
     };
     if (ev.target.className == "type-label") {
@@ -66,7 +68,7 @@ function openSelectMenu(ev) {
             if (selectbox.className == "type-hidden") {
 				selectbox.setAttribute("class","visible");
             } else {
-				selectbox.setAttribute("class","hidden");
+				selectbox.setAttribute("class","type-hidden");
 			};
     };
 };
@@ -87,7 +89,7 @@ function selValue(ev, el) {
 function swSearch() {
     document.querySelector(".content").classList.toggle("content-toggle");
     document.querySelector(".left-aside").classList.toggle("left-aside-on");
-};
+}
 
 function swAdd() {
     document.querySelector(".right-aside").classList.toggle("right-aside-on");
